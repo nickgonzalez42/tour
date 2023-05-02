@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="grid place-items-center w-screen">
+    <div className="bg-slate-400 grid place-items-center w-screen">
       <ReactPhotoSphereViewer ref={photoSphereRef} src={`/70${currentPhoto}.jpg`} height={"100vh"} width={"100vw"} />
       <div className="bg-black min-w-fit h-20 bg-opacity-40 absolute top-0 flex items-center justify-between">
         <svg
