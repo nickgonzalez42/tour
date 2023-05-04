@@ -33,16 +33,16 @@ function App() {
   return (
     <div className="grid place-items-center w-screen">
       <ReactPhotoSphereViewer ref={photoSphereRef} src={`/70${currentPhoto}.jpg`} height={"100vh"} width={"100vw"} />
-      <div className="bg-black min-w-fit h-20 bg-opacity-40 absolute top-0 flex items-center justify-between">
+      <div className="bg-black min-w-fit h-20 bg-opacity-40 absolute top-0 flex items-center justify-between align-baseline">
         <button
-          className="text-white bg-gradient-to-br from-yellow-600 to-red-500 hover:bg-gradient-to-bl focus:ring-red-300 dark:focus:ring-yellow-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ml-2"
+          className="text-white bg-gradient-to-br from-yellow-300 to-red-600 hover:bg-gradient-to-bl focus:ring-red-600 dark:focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ml-2"
           onClick={handleDecrementPhoto}
         >
           Move Back
         </button>
         <p className="text-white font-sans lg:text-3xl shrink">McDonald&apos;s 1st Store Museum</p>
         <button
-          className="text-white bg-gradient-to-br from-red-600 to-yellow-500 hover:bg-gradient-to-bl focus:ring-yellow-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-2 py-2.5 text-center mr-2 mb-2 ml-2"
+          className="text-white bg-gradient-to-br from-red-600 to-yellow-300 hover:bg-gradient-to-bl focus:ring-yellow-300 dark:focus:ring-red-600 font-medium rounded-lg text-sm px-2 py-2.5 text-center mr-2 mb-2 ml-2"
           onClick={handleIncrementPhoto}
         >
           Move Forward
